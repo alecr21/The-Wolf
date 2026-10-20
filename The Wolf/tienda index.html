@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tienda — THE WOLF</title>
+<meta name="description" content="Productos y accesorios tecnológicos. Consultá disponibilidad por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">THE WOLF</a>
+  <nav aria-label="Tienda">
+    <a href="index.html">Volver al inicio</a>
+    <a href="index.html#servicios">Servicios</a>
+    <a href="index.html#contacto">Contacto</a>
+  </nav>
+  <button class="cart-btn" id="openCart" type="button">Carrito (<span id="count">0</span>)</button>
+</header>
+
+<main class="sec">
+  <div class="wrap">
+    <h2>Tienda</h2>
+    <p class="note">Los productos se consultan y se confirman por WhatsApp según disponibilidad. El carrito arma tu pedido para enviarlo como consulta.</p>
+    <p id="status" class="status" role="alert"></p>
+    <div class="tools">
+      <input type="search" id="q" placeholder="Buscar producto" aria-label="Buscar producto">
+      <div id="chips" class="chips" role="group" aria-label="Categorías"></div>
+    </div>
+    <div id="grid" class="grid"></div>
+    <p id="empty" class="note" hidden>No encontramos productos con esa búsqueda. Probá con otra palabra o elegí "Todos".</p>
+  </div>
+</main>
+
+<footer class="foot">THE WOLF — Tecnología & Soporte</footer>
+<button class="wa" id="waFloat" type="button">WhatsApp</button>
+<dialog id="detail"></dialog>
+
+<aside id="cart" class="cart" aria-label="Carrito de compras" aria-hidden="true">
+  <div class="cart-head"><h2>Tu carrito</h2><button type="button" id="closeCart">Cerrar</button></div>
+  <div id="items" class="items"></div>
+  <div class="cart-foot">
+    <p>Total: <strong id="total">$0</strong></p>
+    <button class="btn" type="button" id="order">Pedir por WhatsApp</button>
+    <button class="btn ghost" type="button" id="clear">Vaciar carrito</button>
+  </div>
+</aside>
+
+<script src="whsp main.js"></script>
+<script src="tienda main.js"></script>
+</body>
+</html>
