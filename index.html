@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>THE WOLF — Tecnología & Soporte</title>
+<meta name="description" content="Soporte técnico, mantenimiento de equipos y desarrollo de software: páginas web, programas locales y soluciones a medida.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#inicio">THE WOLF</a>
+  <nav aria-label="Principal">
+    <a href="#inicio">Inicio</a>
+    <a href="#nosotros">Sobre nosotros</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <button class="burger" id="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <div class="menu" id="menu" hidden>
+    <a href="tienda index.html"><strong>Tienda</strong><small>Productos y accesorios</small></a>
+    <a href="accion.html"><strong>Trabajos</strong><small>VIdeos Tutoriales</small></a>
+  </div>
+</header>
+
+<main>
+  <section id="inicio" class="hero">
+    <div>
+      <h1>THE WOLF</h1>
+      <p class="slogan">Tecnología & Soporte</p>
+      <p class="phrase">Soluciones tecnológicas con estrategia y atención cercana.</p>
+      <p class="lead">Soporte técnico y mantenimiento de equipos, ayuda con software y celulares, y desarrollo de páginas web y programas a medida.</p>
+      <div class="actions">
+        <a class="btn" href="#servicios">Ver servicios</a>
+        <a class="btn ghost" data-wa="Hola THE WOLF, quiero hacer una consulta." target="_blank" rel="noopener" href="#contacto">Contactar por WhatsApp</a>
+      </div>
+    </div>
+    <img src="logo/logo .png" alt="Logo de THE WOLF: cabeza de lobo en plata y dorado" onerror="this.remove()">
+  </section>
+
+  <section id="nosotros" class="sec alt">
+    <div class="wrap">
+      <h2>Sobre nosotros</h2>
+      <div class="about">
+        <article><h3>El nombre</h3><p>THE WOLF nace de un gusto personal. De esa figura tomamos los valores que guían la marca: estrategia, adaptación y trabajo en equipo.</p></article>
+        <article><h3>Cómo empezó</h3><p>El interés por la tecnología comenzó hace un par de años. THE WOLF es un emprendimiento reciente que está dando sus primeros pasos.</p></article>
+        <article><h3>Qué buscamos ofrecer</h3><p>Soporte técnico y desarrollo de software explicados en lenguaje claro, para que cada persona entienda qué le pasa a su equipo y cómo se resuelve.</p></article>
+        <article><h3>Misión</h3><p>Ayudar a personas, comercios y pequeños emprendimientos a resolver problemas tecnológicos y a contar con soluciones digitales a su medida.</p></article>
+        <article><h3>Visión</h3><p>Crecer como un emprendimiento tecnológico confiable, que combine soporte técnico y desarrollo de software.</p></article>
+        <article><h3>Qué nos diferencia</h3><p>Reunimos soporte técnico y desarrollo de software en un mismo lugar, con trato directo y explicaciones comprensibles.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" class="sec">
+    <div class="wrap">
+      <h2>Servicios</h2>
+      <div id="services" class="grid"></div>
+    </div>
+  </section>
+
+  <section id="proyectos" class="sec alt">
+    <div class="wrap">
+      <h2>Proyectos</h2>
+      <p class="lead">Espacio para mostrar páginas web, programas locales, proyectos académicos y demostraciones.</p>
+      <div id="projects" class="grid"></div>
+    </div>
+  </section>
+
+  <section id="contacto" class="sec">
+    <div class="wrap">
+      <h2>Contacto</h2>
+      <p class="lead">Contanos qué necesitás y armamos tu consulta por WhatsApp. Indicá qué equipo o proyecto es y qué está pasando.</p>
+      <form id="contactForm" class="form" novalidate>
+        <label>Nombre <input id="cname" autocomplete="name" required></label>
+        <label>Tipo de consulta <select id="ctype"></select></label>
+        <label>Tu consulta <textarea id="cmsg" rows="4" required minlength="10"></textarea></label>
+        <p id="status" class="status" role="alert"></p>
+        <button class="btn" type="submit">Enviar por WhatsApp</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">THE WOLF — Tecnología & Soporte</footer>
+<a class="wa" data-wa="Hola THE WOLF, quiero hacer una consulta." target="_blank" rel="noopener" href="#contacto" aria-label="Abrir WhatsApp">WhatsApp</a>
+
+<script src="whsp main.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
